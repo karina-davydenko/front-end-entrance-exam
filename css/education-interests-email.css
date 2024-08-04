@@ -1,0 +1,99 @@
+/* Education ======= */
+
+.education-interests-email {
+  display: flex;
+  gap: 20px;
+}
+
+.section-education {
+  flex: 1;
+}
+
+.interests-and-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.edu-card-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 10px;
+  background: #ffffff;
+  flex-basis: 116px;
+}
+
+.edu-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edu-card-year {
+  font-weight: 500;
+}
+
+.edu-card-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-card-title {
+  font-weight: 500;
+}
+
+.card-green .edu-card-tags {
+  color: #ebf9f2;
+}
+
+.edu-card-tags {
+  font-weight: 400;
+  font-size: 8px;
+  color: #149063;
+}
+
+.edu-card-heart {
+  height: 11px;
+}
+
+.edu-card-footer {
+  font-weight: 400;
+  flex-grow: 1;
+  align-content: end;
+}
+
+/* Interests ======== */
+
+.int-tag-list {
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.int-tag {
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 4px 10px;
+  font-size: 10px;
+}
+
+/* Email ======== */
+
+.card.section-email {
+  background: #000000;
+  color: #ffffff;
+}
+
+.email {
+  font-size: 10px;
+}
