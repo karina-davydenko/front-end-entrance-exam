@@ -7,7 +7,7 @@ export const insertEducationSectionContent = (data) => {
         return `
           <div class="edu-card ${edu.mark ? "card-green" : ""}">
             <div class="edu-card-header">
-              <span class="edu-card-year">
+              <span class="edu-card-year" contenteditable="true" data-cvdatapath="education.${index}.date">
                 ${edu.date}
               </span>
               ${
@@ -17,14 +17,14 @@ export const insertEducationSectionContent = (data) => {
               }
             </div>
             <div class="edu-card-main">
-              <span class="edu-card-title">
+              <span class="edu-card-title" contenteditable="true" data-cvdatapath="education.${index}.discipline">
                 ${edu.discipline}
               </span>
-              <span class="edu-card-tags">
+              <span class="edu-card-tags" contenteditable="true" data-cvdatapath="education.${index}.tags">
                 ${edu.tags}
               </span>
             </div>
-            <div class="edu-card-footer">
+            <div class="edu-card-footer" contenteditable="true" data-cvdatapath="education.${index}.place">
               ${edu.place}
             </div>
           </div>
@@ -33,7 +33,7 @@ export const insertEducationSectionContent = (data) => {
       .join("");
 
     sectionEducation.innerHTML = `
-      <h2>${data.sectionTitles.education}</h2>
+      <h2 contenteditable="true" data-cvdatapath="sectionTitles.education">${data.sectionTitles.education}</h2>
       <div class="edu-card-list">
         ${items}
       </div>

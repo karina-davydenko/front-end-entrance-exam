@@ -6,14 +6,14 @@ export const insertExperienceSectionContent = (data) => {
       .map((job, index) => {
         const dutyItems = job.duties
           .map((duty, indexDuty) => {
-            return `<li>${duty}</li>`;
+            return `<li contenteditable="true" data-cvdatapath="experience.${index}.duties.${indexDuty}">${duty}</li>`;
           })
           .join("");
 
         return `
           <div class="exp-card ${job.mark ? "card-green" : ""}">
             <div class="exp-card-header">
-              <p>
+              <p contenteditable="true" data-cvdatapath="experience.${index}.dateRange">
                 ${job.dateRange}
               </p>
               ${
@@ -21,6 +21,8 @@ export const insertExperienceSectionContent = (data) => {
                   ? `
                     <div
                       class="exp-card-most-recent-badge"
+                      contenteditable="true"
+                      data-cvdatapath="experience.${index}.mark"
                     >
                       ${job.mark}
                     </div>
@@ -30,10 +32,10 @@ export const insertExperienceSectionContent = (data) => {
             </div>
             <div class="exp-card-main">
               <div class="exp-card-left">
-                <span class="exp-card-role">
+                <span class="exp-card-role" contenteditable="true" data-cvdatapath="experience.${index}.role">
                   ${job.role}
                 </span>
-                <span>
+                <span contenteditable="true" data-cvdatapath="experience.${index}.comment">
                   ${job.comment}
                 </span>
               </div>
@@ -49,7 +51,7 @@ export const insertExperienceSectionContent = (data) => {
       .join("");
 
     sectionExperience.innerHTML = `
-      <h2>${data.sectionTitles.experience}</h2>
+      <h2 contenteditable="true" data-cvdatapath="sectionTitles.experience">${data.sectionTitles.experience}</h2>
       <div class="exp-card-list">
         ${items}
       </div>

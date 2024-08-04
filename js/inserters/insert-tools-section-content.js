@@ -3,10 +3,10 @@ export const insertToolsSectionContent = (data) => {
 
   if (sectionTools) {
     sectionTools.innerHTML = `
-    <h2>${data.sectionTitles.tools.title}</h2>
+    <h2 contenteditable="true" data-cvdatapath="sectionTitles.tools.title">${data.sectionTitles.tools.title}</h2>
     <div class="tool-card-list">
       <div class="tool-card">
-        <div class="tool-card-title">
+        <div class="tool-card-title" contenteditable="true" data-cvdatapath="sectionTitles.tools.groups.0">
           ${data.sectionTitles.tools.groups[0]}
         </div>
         <img src="./public/logos/figma.png" alt="figma logo">
@@ -17,7 +17,7 @@ export const insertToolsSectionContent = (data) => {
         <img src="./public/logos/meet.png" alt="meet logo">
       </div>
       <div class="tool-card">
-        <div class="tool-card-title">
+        <div class="tool-card-title" contenteditable="true" data-cvdatapath="sectionTitles.tools.groups.1">
           ${data.sectionTitles.tools.groups[1]}
         </div>
         <img src="./public/logos/zapier.png" alt="zapier logo">
@@ -26,7 +26,7 @@ export const insertToolsSectionContent = (data) => {
         <img src="./public/logos/wordpress.png" alt="wordpress logo">
       </div>
       <div class="tool-card">
-        <div class="tool-card-title">
+        <div class="tool-card-title" contenteditable="true" data-cvdatapath="sectionTitles.tools.groups.2">
           ${data.sectionTitles.tools.groups[2]}
         </div>
         <img src="./public/logos/chatGPT.png" alt="chatGPT logo">
