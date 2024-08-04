@@ -98,3 +98,27 @@
   font-size: 5px;
   white-space: nowrap;
 }
+
+@media (max-width: 550px) {
+  .experience-and-tools {
+    flex-direction: column;
+  }
+
+  .tool-card-list {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .tool-card {
+    justify-content: flex-start;
+  }
+
+  .education-interests-email {
+    flex-direction: column;
+  }
+
+  .edu-card-list {
+    justify-content: space-around;
+  }
+}
+

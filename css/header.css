@@ -89,3 +89,13 @@
 .lang-skill-75 {
   width: 75%;
 }
+
+@media (max-width: 550px) {
+  .about-me-short {
+    flex: auto;
+  }
+
+  .cv-header {
+    flex-direction: column;
+  }
+}
