@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
           {
             duration: 150,
             iterations: 2,
-          }
+          },
         );
       }
     });
