@@ -8,6 +8,7 @@ import {
   insertEmailSectionContent,
 } from "./inserters";
 import { removeLinebreaks } from "./utils/remove-linebreaks";
+import { setDownloadCvOnClick } from "./set-download-cv-on-click";
 
 import { defaultCvData } from "./default-cv-data";
 
@@ -32,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   insertEducationSectionContent(cvData);
   insertInterestsSectionContent(cvData);
   insertEmailSectionContent(cvData);
+
+  setDownloadCvOnClick();
 
   const allEditable = document.querySelectorAll('[contenteditable="true"]');
 

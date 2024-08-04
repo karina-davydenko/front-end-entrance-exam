@@ -14,10 +14,14 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/experience-and-tools.css" />
     <link rel="stylesheet" href="./css/education-interests-email.css" />
+    <link rel="stylesheet" href="./css/download-cv-button.css" />
     <link rel="stylesheet" href="./css/general.css" />
   </head>
 
   <body>
+    <button type="button" id="download-cv-button" data-html2canvas-ignore>
+      💾 Download CV 💾
+    </button>
     <header class="cv-header">
       <section class="section-iam">
         <figure>
@@ -41,5 +45,11 @@
       </div>
     </main>
     <script type="module" src="./js/main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
