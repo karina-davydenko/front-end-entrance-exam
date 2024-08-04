@@ -19,6 +19,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me-short .ripple {
+  animation: hoverRippleAnimation 0.85s linear infinite;
+  transform: translate(-50%, -50%) scale(0);
+  position: absolute;
+  pointer-events: none;
+  background: #ffffff;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+@keyframes hoverRippleAnimation {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.25;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
 }
 
 .cv-greeting-phrase {

@@ -9,6 +9,7 @@ import {
 } from "./inserters";
 import { removeLinebreaks } from "./utils/remove-linebreaks";
 import { setDownloadCvOnClick } from "./set-download-cv-on-click";
+import { ripple } from "./ripple";
 
 import { defaultCvData } from "./default-cv-data";
 
@@ -74,4 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const aboutMeShort = document.querySelector(".about-me-short");
+
+  aboutMeShort.addEventListener("mouseenter", ripple);
 });
