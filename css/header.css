@@ -1,0 +1,91 @@
+.cv-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section-iam {
+  display: flex;
+  gap: 20px;
+}
+
+.cv-photo {
+  width: 124px;
+  height: 124px;
+  border-radius: 12px;
+}
+
+.about-me-short {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cv-greeting-phrase {
+  font-weight: 500;
+  font-size: 10px;
+}
+
+.cv-who-am-i {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cv-name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14.5px;
+}
+
+.cv-role {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gray);
+}
+
+.section-languages {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.section-languages ul {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.section-languages li {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.lang-skill-title {
+  font-weight: 500;
+  font-size: 10px;
+  flex-basis: 33%;
+}
+
+.lang-skill {
+  display: inline-block;
+  height: 11px;
+  border-radius: 3px;
+  background-color: var(--green);
+}
+
+.lang-skill-container {
+  display: inline-flex;
+  flex-basis: 66%;
+}
+
+.lang-skill-100 {
+  width: 100%;
+}
+
+.lang-skill-75 {
+  width: 75%;
+}

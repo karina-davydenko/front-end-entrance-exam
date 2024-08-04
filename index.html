@@ -1,11 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/general.css" />
   </head>
   <body>
+    <header class="cv-header">
+      <section class="section-iam">
+        <figure>
+          <img class="cv-photo" src="./public/avatar.png" alt="Karthik SR" />
+        </figure>
+        <div class="about-me-short card">
+          <p class="cv-greeting-phrase">Hello 👋🏻 I’m</p>
+          <div class="cv-who-am-i">
+            <h1 class="cv-name">Karth SR</h1>
+            <p class="cv-role">UX/UI Designer</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-languages card">
+        <h2>Languages</h2>
+        <ul class="lang-skill-list">
+          <li>
+            <span class="lang-skill-title">English</span>
+            <span class="lang-skill-container">
+              <span class="lang-skill lang-skill-100"></span>
+            </span>
+          </li>
+
+          <li>
+            <span class="lang-skill-title">Malayalam</span>
+            <span class="lang-skill-container">
+              <span class="lang-skill lang-skill-100"></span>
+            </span>
+          </li>
+
+          <li>
+            <span class="lang-skill-title">Hindi</span>
+            <span class="lang-skill-container">
+              <span class="lang-skill lang-skill-75"></span>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </header>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

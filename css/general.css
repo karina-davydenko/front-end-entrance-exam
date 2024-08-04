@@ -1,0 +1,11 @@
+.card {
+  padding: 12px;
+  border-radius: 12px;
+  background: #f0f0f0;
+}
+
+.card h2 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
