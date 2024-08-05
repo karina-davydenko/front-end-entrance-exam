@@ -34,4 +34,4 @@ https://karina-davydenko.github.io/front-end-entrance-exam/
 ### Перед отправкой на проверку:
 
 1. Код был отформатирован через [Prettier](https://prettier.io/)
-2. Верстка была проверена через Валидатор HTML от W3C: https://validator.w3.org с результатом "Document checking completed. No errors or warnings to show."
+2. Итоговая верстка, которая отображается на экране, была проверена через Валидатор HTML от [W3C](https://validator.w3.org) с результатом "Document checking completed. No errors or warnings to show.". Само собой, если проверить по урлу с GitHub Pages, так как части страницы рендерятся с использованием JS, будут info и warnings, потому что страница ещё не собрана до конца. Считаю это допущением согласно описанию задания, в котором не было описано конкретных требований к рендерингу.
