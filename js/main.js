@@ -6,12 +6,12 @@ import {
   insertEducationSectionContent,
   insertInterestsSectionContent,
   insertEmailSectionContent,
-} from "./inserters";
-import { removeLinebreaks } from "./utils/remove-linebreaks";
-import { setDownloadCvOnClick } from "./set-download-cv-on-click";
-import { ripple } from "./ripple";
+} from "./inserters/index.js";
+import { removeLinebreaks } from "./utils/remove-linebreaks.js";
+import { setDownloadCvOnClick } from "./set-download-cv-on-click.js";
+import { ripple } from "./ripple.js";
 
-import { defaultCvData } from "./default-cv-data";
+import { defaultCvData } from "./default-cv-data.js";
 
 const LS_CV_DATA_KEY = "cv-data";
 

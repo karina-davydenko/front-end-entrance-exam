@@ -1,4 +1,4 @@
-import { ripple } from "./ripple";
+import { ripple } from "./ripple.js";
 
 export const setDownloadCvOnClick = () => {
   const downloadCvButton = document.querySelector("#download-cv-button");
